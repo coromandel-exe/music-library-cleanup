@@ -1,0 +1,12 @@
+# Exclude all folders (music libraries, Serato data, etc.)
+_Serato_/
+_Serato_Backup/
+Ableton/
+Drop Point/
+MG Library/
+MG Library (backlog)/
+PioneerDJ/
+rekordbox/
+__pycache__/
+.DS_Store
+desktop.ini
