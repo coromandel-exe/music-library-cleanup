@@ -10,5 +10,4 @@ rekordbox/
 __pycache__/
 .DS_Store
 desktop.ini
-.gitignore 
 target_dir/

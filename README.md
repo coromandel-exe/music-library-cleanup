@@ -2,7 +2,7 @@
 
 ~ metadata can be edited easily using the free, insanely generous [OneTagger software](https://onetagger.github.io/)
 
-~ made with creative djing and quick set prepartion in mind
+~ made with creative djing and quick set preparation in mind
 
 ~ currently in proof of concept phase
 
