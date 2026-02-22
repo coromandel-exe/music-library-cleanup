@@ -10,7 +10,7 @@
 
 # current functionality
 
-* copy marked files into a tagged library without affecting your current library structure
+* copy marked files into a tagged library without affecting your existing library structure
 * filter music automatically into folders based on genre, mood, energy, bpm and descriptive tags
 * restructure your tagged library from the ground up in seconds!
 
@@ -18,12 +18,12 @@
 
 1. clone the repo
 2. install the dependencies: `pip install -r requirements.txt`
-3. copy a few mp3 files of your own to the `source_dir` folder in the repo. add a range of bpms if possible.
-4. use the OneTagger software to mark all the tracks with a 'Happy' mood marker
-5. use the OneTagger software to give some tracks the 'Start' quick tag
+3. copy a few untagged mp3 files of your own into the empty `source_dir` folder in the repo
+4. use the OneTagger software to mark all the tracks with a 'Happy' mood tag. check the quick tag settings to ensure this is written into the 'composer' (TCOM) tag frame
+5. use the OneTagger software to give some tracks the 'Start' tag. check the quick tag custom settings to ensure this is written into the 'comment' (COMM) tag frame
 6. execute `python program.py`.
 
-you should see a new `target_dir` folder with your tagged music sorted into a 'starter' folder and further separated into 'slow' and 'fast' folders based on bpm. you can run the programme again to copy more marked files from the source directory or filter newly tagged files in the target directory.
+you should see a new `target_dir` folder with your tagged music sorted into a `starter` folder and further separated into `slow` and `fast` folders based on bpm. you can run the programme again to copy more marked files from the source directory or filter newly tagged files in the target directory.
 
 # use with your own library
 
@@ -35,4 +35,4 @@ you should see a new `target_dir` folder with your tagged music sorted into a 's
 
 3. specify your desired new folder structure to the `folder_structure.py` file
 4. tag your music
-5. run the programme
+5. execute the programme
