@@ -64,7 +64,10 @@ def copy_files_to_root(source_path, target_path, markers):
         
     print(f"\n{copy_counter} files copied from {total_files} total files in {folder_counter} folders.")
     print(f"\n{pass_counter} files matched existing files in the target directory and were not copied.")
-    print(f"\n\033[1mYou have completed {round((pass_counter + copy_counter) / total_files * 100, ndigits=2)}% of the transfer from this root folder.\033[0m")
+    try:
+        print(f"\n{round((pass_counter + copy_counter) / total_files * 100, ndigits=2)}% of the transfer from this root folder is complete.")
+    except ZeroDivisionError:
+        print(f"\nNo files to process in this root folder.")
     print(f"\n{len(attention_files)} files need attention (non-mp3 files or errors).")
     # print(f"\n Files needing attention:")
     # pprint.pprint(attention_files)

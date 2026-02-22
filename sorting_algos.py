@@ -309,7 +309,10 @@ def display_status(root_folder):
             stack.extend(reversed(current_folder.child_nodes))
             
 
-    percent_sorted = round(leaf_node_files / root_folder.total_files * 100, ndigits=2)
+    try: 
+        percent_sorted = round(leaf_node_files / root_folder.total_files * 100, ndigits=2)
+    except ZeroDivisionError:
+        percent_sorted = 0
 
     print(f"\n\033[1mLibrary stats\033[0m\n")
     print(tabulate(library_stats, headers=["Folder", "Leaf node", "Total files", "Files"]))
